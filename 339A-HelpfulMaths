@@ -1,0 +1,12 @@
+s = input()
+l = []
+i = 0
+while i < len(s):
+    if s[i] != "+":
+        l.append(s[i])
+    i = i + 1
+m = []
+for x in sorted(l):
+    m.append(x + "+")
+m = list("".join(m))[0:-1]
+print("".join(m))
